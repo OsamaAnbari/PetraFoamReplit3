@@ -309,23 +309,17 @@ const Contact = () => {
               Find Us
             </h2>
             <div className="bg-gray-200 rounded-lg overflow-hidden h-96 shadow-md">
-              {/* For a real implementation, this would be a Google Maps embed */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-24 w-24 text-gray-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-                  />
-                </svg>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.4598113023386!2d35.9784461!3d31.761109999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDQ1JzQwLjAiTiAzNcKwNTgnNDIuNSJF!5e0!3m2!1sen!2sus!4v1623238089745!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Petra Foam Location"
+                className="w-full h-full"
+              ></iframe>
             </div>
           </div>
         </div>
