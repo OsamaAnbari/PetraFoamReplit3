@@ -25,10 +25,10 @@ const About = () => {
         <meta name="description" content="Learn about Petra Foam, our company history, mission, and our commitment to providing high-quality thermal insulation solutions." />
       </Helmet>
       
-      <div className="bg-white py-16">
-        <div className="container mx-auto px-4">
+      <div className="bg-white section-padding">
+        <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-primary mb-4">About Us</h1>
+            <h1 className="text-4xl font-bold text-primary mb-6">About Us</h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Learn about our company, our mission, and our commitment to providing high-quality thermal insulation solutions.
             </p>

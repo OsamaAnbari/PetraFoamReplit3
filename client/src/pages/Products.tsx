@@ -34,10 +34,10 @@ const Products = () => {
         <meta name="description" content="Explore our range of high-quality thermal insulation solutions including XPS and EPS products for optimal performance." />
       </Helmet>
       
-      <div className="bg-white py-16">
-        <div className="container mx-auto px-4">
+      <div className="bg-white section-padding">
+        <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-primary mb-4">Our Products</h1>
+            <h1 className="text-4xl font-bold text-primary mb-6">Our Products</h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Discover our range of high-quality thermal insulation solutions designed for optimal performance.
             </p>

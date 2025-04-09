@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 const CallToAction = () => {
   return (
-    <div className="py-16 bg-primary text-white">
-      <div className="container mx-auto px-4 text-center">
+    <div className="section-padding bg-primary text-white">
+      <div className="container mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Ready to Start Your Project?
         </h2>

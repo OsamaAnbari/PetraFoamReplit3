@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className="flex items-center flex-shrink-0 mr-6">
             <Link href="/">
               <a className="text-primary font-bold text-2xl lg:text-3xl font-sans">
-                <span className="text-amber-500">Petra</span> Foam
+                Petra Foam
               </a>
             </Link>
           </div>
@@ -84,13 +84,7 @@ const Navbar = () => {
                 </a>
               </Link>
             </div>
-            <div className="text-center lg:text-left">
-              <Link href="/contact">
-                <Button className="mt-4 lg:mt-0 bg-amber-500 hover:bg-amber-600 text-white" onClick={closeMenu}>
-                  Get a Quote
-                </Button>
-              </Link>
-            </div>
+            {/* Get a Quote button removed */}
           </div>
         </nav>
       </div>
