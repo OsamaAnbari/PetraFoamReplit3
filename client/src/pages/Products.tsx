@@ -1,11 +1,13 @@
 import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 import { products, technicalSpecs } from "@/lib/data";
 import ProductCard from "@/components/products/ProductCard";
 import { useLocation } from "wouter";
 
 const Products = () => {
   const [location] = useLocation();
+  const { t } = useTranslation();
   const xpsRef = useRef<HTMLDivElement>(null);
   const epsRef = useRef<HTMLDivElement>(null);
 
@@ -30,26 +32,26 @@ const Products = () => {
   return (
     <>
       <Helmet>
-        <title>Products - Petra Foam Thermal Insulation</title>
-        <meta name="description" content="Explore our range of high-quality thermal insulation solutions including XPS and EPS products for optimal performance." />
+        <title>{t('products.title')} - Petra Foam</title>
+        <meta name="description" content={t('products.subtitle')} />
       </Helmet>
       
       <div className="bg-white section-padding">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-primary mb-6">Our Products</h1>
+            <h1 className="text-4xl font-bold text-primary mb-6">{t('products.title')}</h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Discover our range of high-quality thermal insulation solutions designed for optimal performance.
+              {t('products.subtitle')}
             </p>
           </div>
 
           {/* XPS Products */}
           <div className="mb-16" ref={xpsRef} id="xps">
             <h2 className="text-3xl font-bold text-primary mb-6 relative after:content-[''] after:block after:w-[50px] after:h-[3px] after:bg-primary after:mt-4">
-              XPS Insulation
+              {t('products.xps.title')}
             </h2>
             <p className="text-gray-600 mb-8 max-w-4xl">
-              Extruded Polystyrene (XPS) insulation boards provide exceptional thermal performance and moisture resistance, making them ideal for demanding applications.
+              {t('products.xps.description')}
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -62,10 +64,10 @@ const Products = () => {
           {/* EPS Products */}
           <div className="mb-16" ref={epsRef} id="eps">
             <h2 className="text-3xl font-bold text-primary mb-6 relative after:content-[''] after:block after:w-[50px] after:h-[3px] after:bg-primary after:mt-4">
-              EPS Insulation
+              {t('products.eps.title')}
             </h2>
             <p className="text-gray-600 mb-8 max-w-4xl">
-              Expanded Polystyrene (EPS) provides cost-effective thermal insulation with excellent versatility for various construction applications.
+              {t('products.eps.description')}
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -78,22 +80,22 @@ const Products = () => {
           {/* Technical Specs */}
           <div className="mt-16">
             <h2 className="text-3xl font-bold text-primary mb-6 relative after:content-[''] after:block after:w-[50px] after:h-[3px] after:bg-primary after:mt-4">
-              Technical Specifications
+              {t('products.specs.title')}
             </h2>
             <div className="overflow-x-auto bg-white shadow-md rounded-lg">
               <table className="min-w-full">
                 <thead>
                   <tr className="bg-primary text-white text-left">
-                    <th className="py-3 px-4">Property</th>
-                    <th className="py-3 px-4">XPS Standard</th>
-                    <th className="py-3 px-4">XPS High Density</th>
-                    <th className="py-3 px-4">EPS Standard</th>
+                    <th className="py-3 px-4">{t('products.specs.property')}</th>
+                    <th className="py-3 px-4">{t('products.specs.xpsStandard')}</th>
+                    <th className="py-3 px-4">{t('products.specs.xpsHighDensity')}</th>
+                    <th className="py-3 px-4">{t('products.specs.epsStandard')}</th>
                   </tr>
                 </thead>
                 <tbody>
                   {technicalSpecs.map((spec, index) => (
                     <tr key={index} className={index % 2 === 1 ? "border-b bg-gray-50" : "border-b"}>
-                      <td className="py-3 px-4 font-medium">{spec.property}</td>
+                      <td className="py-3 px-4 font-medium">{t(`products.specs.properties.${spec.property.toLowerCase().replace(/\s+/g, '')}`)}</td>
                       <td className="py-3 px-4">{spec.xpsStandard}</td>
                       <td className="py-3 px-4">{spec.xpsHighDensity}</td>
                       <td className="py-3 px-4">{spec.epsStandard}</td>
@@ -103,7 +105,7 @@ const Products = () => {
               </table>
             </div>
             <p className="mt-4 text-sm text-gray-500">
-              * Values may vary depending on specific product variants. Contact us for detailed technical datasheets.
+              {t('products.specs.disclaimer')}
             </p>
           </div>
         </div>

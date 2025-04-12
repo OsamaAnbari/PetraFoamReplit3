@@ -1,0 +1,180 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "projects": "Projects",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "home": {
+    "hero": {
+      "title": "Leading Provider of Thermal Insulation Solutions",
+      "subtitle": "High-quality thermal insulation materials for energy-efficient buildings"
+    },
+    "products": {
+      "title": "Our Premium Insulation Products",
+      "subtitle": "Innovative solutions designed for maximum thermal efficiency and energy savings"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Petra Foam",
+      "subtitle": "Leading the industry with quality thermal solutions for over a decade"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Discover our range of high-quality thermal insulation solutions designed for optimal performance",
+    "xps": {
+      "title": "XPS Insulation",
+      "description": "Extruded Polystyrene (XPS) insulation boards provide exceptional thermal performance and moisture resistance, making them ideal for demanding applications",
+      "products": {
+        "standard": {
+          "name": "XPS Standard Board",
+          "description": "High-density insulation for roofs, walls, and floors"
+        },
+        "highDensity": {
+          "name": "XPS High Density",
+          "description": "Superior compression strength for floor applications"
+        },
+        "facade": {
+          "name": "XPS Facade Insulation",
+          "description": "Specialized panels for exterior insulation systems"
+        },
+        "perimeter": {
+          "name": "XPS Perimeter",
+          "description": "Moisture-resistant boards for below-grade applications"
+        }
+      }
+    },
+    "eps": {
+      "title": "EPS Insulation",
+      "description": "Expanded Polystyrene (EPS) provides cost-effective thermal insulation with excellent versatility for various construction applications",
+      "products": {
+        "standard": {
+          "name": "EPS Standard",
+          "description": "Standard EPS boards for general insulation needs"
+        },
+        "roof": {
+          "name": "EPS Roof Insulation",
+          "description": "Tapered roof systems for effective drainage"
+        },
+        "floor": {
+          "name": "EPS Floor System",
+          "description": "Underfloor heating and acoustic insulation"
+        },
+        "decorative": {
+          "name": "EPS Decorative Elements",
+          "description": "Facade decorations and architectural elements"
+        }
+      }
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "property": "Property",
+      "xpsStandard": "XPS Standard",
+      "xpsHighDensity": "XPS High Density",
+      "epsStandard": "EPS Standard",
+      "disclaimer": "* Values may vary depending on specific product variants. Contact us for detailed technical datasheets.",
+      "properties": {
+        "thermalConductivity": "Thermal Conductivity",
+        "compressiveStrength": "Compressive Strength",
+        "waterAbsorption": "Water Absorption",
+        "fireClassification": "Fire Classification",
+        "temperatureRange": "Temperature Range"
+      }
+    },
+    "dimensions": "Dimensions",
+    "thickness": "Thickness"
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Explore our successful implementations across various sectors",
+    "categories": {
+      "all": "All Projects",
+      "commercial": "Commercial",
+      "residential": "Residential",
+      "industrial": "Industrial"
+    },
+    "location": "Location",
+    "year": "Year"
+  },
+  "features": {
+    "1": {
+      "title": "Quality Materials",
+      "description": "Our insulation products are manufactured using the highest quality materials that meet international standards."
+    },
+    "2": {
+      "title": "Energy Efficiency",
+      "description": "Our solutions help reduce energy consumption, providing significant savings in heating and cooling costs."
+    },
+    "3": {
+      "title": "Expert Support",
+      "description": "Our technical team provides comprehensive support from product selection to installation guidance."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Learn about our company, our mission, and our commitment to providing high-quality thermal insulation solutions",
+    "leaders": "Leaders in Thermal Insulation",
+    "description": "Jordan Mountains Intermediate Industries, one of the region's leading Arab companies producing extruded polystyrene boards for thermal insulation according to the latest international standards and using the best manufacturing techniques.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide high-quality, innovative thermal insulation solutions that help our customers save energy, reduce costs, and contribute to a more sustainable future."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading provider of thermal insulation solutions in the Middle East, recognized for quality, innovation, and customer service."
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "items": {
+        "1": {
+          "title": "Company Founded",
+          "description": "Petra Foam was established as a specialist in thermal insulation materials."
+        },
+        "2": {
+          "title": "Factory Expansion",
+          "description": "Expanded manufacturing capacity with state-of-the-art production line."
+        },
+        "3": {
+          "title": "ISO Certification",
+          "description": "Achieved ISO 9001 certification for quality management systems."
+        },
+        "4": {
+          "title": "Regional Expansion",
+          "description": "Expanded operations to serve customers throughout the Middle East."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team to discuss your thermal insulation needs or request a quote",
+    "info": {
+      "title": "Contact Information",
+      "company": "Jordan Mountains Intermediate Industries co. ltd.",
+      "address": "Amman, Jordan",
+      "tel": "Tel",
+      "fax": "Fax",
+      "email": "Email"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Name*",
+      "email": "Email*",
+      "phone": "Phone",
+      "company": "Company",
+      "subject": "Subject*",
+      "message": "Message*",
+      "submit": "Send Message",
+      "submitAnother": "Send Another Message",
+      "sending": "Sending..."
+    },
+    "map": {
+      "title": "Find Us"
+    }
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "language": "Language"
+  }
+} 

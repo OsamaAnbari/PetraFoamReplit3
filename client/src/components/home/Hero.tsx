@@ -1,6 +1,9 @@
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="w-full h-[500px] flex items-center justify-center relative overflow-hidden bg-primary">
       {/* Background overlay */}
@@ -16,20 +19,20 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 text-center text-white relative z-20">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Advanced Thermal Insulation Solutions
+          {t('home.hero.title')}
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          Energy-efficient building materials for modern construction
+          {t('home.hero.subtitle')}
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link href="/products">
             <a className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg hover:shadow-xl">
-              Explore Products
+              {t('nav.products')}
             </a>
           </Link>
           <Link href="/contact">
             <a className="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg hover:shadow-xl">
-              Contact Us
+              {t('nav.contact')}
             </a>
           </Link>
         </div>

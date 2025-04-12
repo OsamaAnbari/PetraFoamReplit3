@@ -1,16 +1,19 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ProductsOverview = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="section-title">
-            Our Premium Insulation Products
+            {t('home.products.title')}
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Innovative solutions designed for maximum thermal efficiency and energy savings.
+            {t('home.products.subtitle')}
           </p>
         </div>
         
@@ -28,7 +31,7 @@ const ProductsOverview = () => {
               </p>
               <Link href="/products#xps">
                 <a className="inline-flex items-center text-primary hover:text-blue-700 font-medium">
-                  Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                  {t('common.learnMore')} <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Link>
             </div>
@@ -43,11 +46,11 @@ const ProductsOverview = () => {
             <div className="p-6">
               <h3 className="text-2xl font-bold text-primary mb-3">EPS Insulation</h3>
               <p className="text-gray-600 mb-4">
-                Expanded Polystyrene solutions that offer excellent thermal performance with cost-effective implementation.
+                Expanded Polystyrene boards offering excellent thermal insulation and cost-effective solutions.
               </p>
               <Link href="/products#eps">
                 <a className="inline-flex items-center text-primary hover:text-blue-700 font-medium">
-                  Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                  {t('common.learnMore')} <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Link>
             </div>

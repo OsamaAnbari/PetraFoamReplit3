@@ -1,5 +1,6 @@
 import { features } from "@/lib/data";
 import { Award, Leaf, Wrench } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const getIconComponent = (iconName: string) => {
   switch (iconName) {
@@ -15,15 +16,17 @@ const getIconComponent = (iconName: string) => {
 };
 
 const WhyChooseUs = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="section-padding bg-gray-100">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="section-title">
-            Why Choose Petra Foam
+            {t('home.whyChooseUs.title')}
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Leading the industry with quality thermal solutions for over a decade.
+            {t('home.whyChooseUs.subtitle')}
           </p>
         </div>
         
@@ -36,8 +39,8 @@ const WhyChooseUs = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 mb-6 bg-blue-600 rounded-full text-white">
                 {getIconComponent(feature.icon)}
               </div>
-              <h3 className="text-xl font-bold text-primary mb-3">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-bold text-primary mb-3">{t(`features.${feature.id}.title`)}</h3>
+              <p className="text-gray-600">{t(`features.${feature.id}.description`)}</p>
             </div>
           ))}
         </div>

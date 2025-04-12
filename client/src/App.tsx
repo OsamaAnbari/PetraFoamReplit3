@@ -8,6 +8,7 @@ import Products from "@/pages/Products";
 import Projects from "@/pages/Projects";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import '@/i18n/i18n';
 
 function Router() {
   return (
